@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1); /* 좌우 반전 */
+    opacity: 0.7;
+    display: none; /* 비디오 피드를 숨깁니다 */
+}
+
+.hand-point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#start-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 10;
+}
+
+#umbrella {
+    position: absolute;
+    width: 50px; /* 우산 이미지의 크기 */
+    height: 50px;
+    transform: scaleX(-1); /* 우산 이미지 좌우 반전 */
+}
